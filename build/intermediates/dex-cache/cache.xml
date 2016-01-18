@@ -2,88 +2,11 @@
 <items version="2" >
 
     <item
-        jar="/Users/soehler/AndroidNanoDegree/Material Design for Android Developpers/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/classes.jar"
+        jar="/Users/soehler/AndroidNanoDegree/Material Design for Android Developpers/xyzreader/XYZReader/build/intermediates/transforms/instantRunSlicer/debug/jars/1/1a/dependencies.jar"
         jumboMode="false"
-        revision="22.0.1"
-        sha1="f8efd0096475e0daf054267b61544e10dc776503">
-        <dex dex="/Users/soehler/AndroidNanoDegree/Material Design for Android Developpers/xyzreader/XYZReader/build/intermediates/pre-dexed/debug/classes-f360129c7fdb4b5785f28adbe25b5847a2a055d2.jar" />
-    </item>
-    <item
-        jar="/Users/soehler/AndroidNanoDegree/Material Design for Android Developpers/xyzreader/XYZReader/libs/volley.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="c68094cbd011a3f9dccbfe16e77a2cf43622e277">
-        <dex dex="/Users/soehler/AndroidNanoDegree/Material Design for Android Developpers/xyzreader/XYZReader/build/intermediates/pre-dexed/debug/volley-9b314831a2b0cb9792f100ffbd68c8d3a70291f9.jar" />
-    </item>
-    <item
-        jar="/Users/soehler/AndroidNanoDegree/Material Design for Android Developpers/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
-        <dex dex="/Users/soehler/AndroidNanoDegree/Material Design for Android Developpers/xyzreader/XYZReader/build/intermediates/pre-dexed/debug/classes-2dfd0195a18603563bf41a74b3382f1ee74e12df.jar" />
-    </item>
-    <item
-        jar="/Users/soehler/android-sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.1/support-annotations-22.2.1.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
-        <dex dex="/Users/soehler/AndroidNanoDegree/Material Design for Android Developpers/xyzreader/XYZReader/build/intermediates/pre-dexed/debug/support-annotations-22.2.1-93813d49d08a0b6482209142a534a3efc1c457aa.jar" />
-    </item>
-    <item
-        jar="/Users/soehler/AndroidNanoDegree/Material Design for Android Developpers/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/palette-v7/22.2.1/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="d3aba1c188fea5ee83ebbcb458be29d1cc0ef483">
-        <dex dex="/Users/soehler/AndroidNanoDegree/Material Design for Android Developpers/xyzreader/XYZReader/build/intermediates/pre-dexed/debug/classes-5421d01e81dd602d9b25240debf0931163bd9c7a.jar" />
-    </item>
-    <item
-        jar="/Users/soehler/AndroidNanoDegree/Material Design for Android Developpers/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/support-v13/22.2.1/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="c4caf832116bca1f2e140bf1fb600e2edd190837">
-        <dex dex="/Users/soehler/AndroidNanoDegree/Material Design for Android Developpers/xyzreader/XYZReader/build/intermediates/pre-dexed/debug/classes-d2b38e350051e6566796889284cfc9b1d8450fba.jar" />
-    </item>
-    <item
-        jar="/Users/soehler/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp/2.7.2/20f6463eb19ac61960c5d91a094c2f4f0727dc2e/okhttp-2.7.2.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="20f6463eb19ac61960c5d91a094c2f4f0727dc2e">
-        <dex dex="/Users/soehler/AndroidNanoDegree/Material Design for Android Developpers/xyzreader/XYZReader/build/intermediates/pre-dexed/debug/okhttp-2.7.2-c23beb57ea1cff2052e5c95df5fe7171c0c19747.jar" />
-    </item>
-    <item
-        jar="/Users/soehler/AndroidNanoDegree/Material Design for Android Developpers/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/support-v13/22.2.1/libs/internal_impl-22.2.1.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="6fc4c7067459e8d69e1bbcb3a8973cdd84d5d87b">
-        <dex dex="/Users/soehler/AndroidNanoDegree/Material Design for Android Developpers/xyzreader/XYZReader/build/intermediates/pre-dexed/debug/internal_impl-22.2.1-3051ac8efa987ef05f64b7d1e12e43388652b405.jar" />
-    </item>
-    <item
-        jar="/Users/soehler/AndroidNanoDegree/Material Design for Android Developpers/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/libs/internal_impl-22.2.1.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
-        <dex dex="/Users/soehler/AndroidNanoDegree/Material Design for Android Developpers/xyzreader/XYZReader/build/intermediates/pre-dexed/debug/internal_impl-22.2.1-a28dd7b1905d9fa212175d97247e2ceecc15c400.jar" />
-    </item>
-    <item
-        jar="/Users/soehler/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="98476622f10715998eacf9240d6b479f12c66143">
-        <dex dex="/Users/soehler/AndroidNanoDegree/Material Design for Android Developpers/xyzreader/XYZReader/build/intermediates/pre-dexed/debug/okio-1.6.0-6cfdb1d8f7ec30f4556afcb9bfdd3da59bae4374.jar" />
-    </item>
-    <item
-        jar="/Users/soehler/AndroidNanoDegree/Material Design for Android Developpers/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.2.1/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="3abb4b88f5a8a0584a9b01d3170d7165f12f8588">
-        <dex dex="/Users/soehler/AndroidNanoDegree/Material Design for Android Developpers/xyzreader/XYZReader/build/intermediates/pre-dexed/debug/classes-c808a7abdfe5f32fa56ba3f9a7a93a6c111c2d39.jar" />
-    </item>
-    <item
-        jar="/Users/soehler/AndroidNanoDegree/Material Design for Android Developpers/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/cardview-v7/22.2.1/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="e1fa5e1123997a55e3ed65b44892993ff4b58cfe">
-        <dex dex="/Users/soehler/AndroidNanoDegree/Material Design for Android Developpers/xyzreader/XYZReader/build/intermediates/pre-dexed/debug/classes-cc633958ee13babf5220f39f225f8bffabf2453c.jar" />
+        revision="23.0.2"
+        sha1="8f1278bf34240a37699ce10a0b878d6f13261036">
+        <dex dex="/Users/soehler/AndroidNanoDegree/Material Design for Android Developpers/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/1a/dependencies_96e356daf1a45f9d240662a038af26f03102c51b/classes.dex" />
     </item>
 
 </items>
