@@ -8,14 +8,14 @@ import android.content.IntentFilter;
 import android.content.Loader;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.support.design.widget.CoordinatorLayout;
+import android.support.design.widget.Snackbar;
 import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.support.v7.widget.Toolbar;
 import android.text.format.DateUtils;
-import android.util.TypedValue;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -31,12 +31,17 @@ import com.example.xyzreader.data.UpdaterService;
  * touched, lead to a {@link ArticleDetailActivity} representing item details. On tablets, the
  * activity presents a grid of items as cards.
  */
-public class ArticleListActivity extends ActionBarActivity implements
+public class ArticleListActivity extends AppCompatActivity implements
         LoaderManager.LoaderCallbacks<Cursor> {
 
     private Toolbar mToolbar;
     private SwipeRefreshLayout mSwipeRefreshLayout;
     private RecyclerView mRecyclerView;
+    private CoordinatorLayout mCoordinatorLayout;
+
+    private boolean mIsRefreshing = false;
+    boolean mIsConnected =  true;
+    boolean mIsError = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,7 +54,16 @@ public class ArticleListActivity extends ActionBarActivity implements
         final View toolbarContainerView = findViewById(R.id.toolbar_container);
 
         mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipe_refresh_layout);
+        mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+                                                     @Override
+                                                     public void onRefresh() {
+                                                         if (!mIsRefreshing){
+                                                             refresh();
+                                                         }
+                                                     }
+                                                 });
 
+        mCoordinatorLayout = (CoordinatorLayout) findViewById(R.id.coordinatorLayout);
         mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         getLoaderManager().initLoader(0, null, this);
 
@@ -58,6 +72,7 @@ public class ArticleListActivity extends ActionBarActivity implements
         }
     }
 
+
     private void refresh() {
         startService(new Intent(this, UpdaterService.class));
     }
@@ -65,6 +80,7 @@ public class ArticleListActivity extends ActionBarActivity implements
     @Override
     protected void onStart() {
         super.onStart();
+
         registerReceiver(mRefreshingReceiver,
                 new IntentFilter(UpdaterService.BROADCAST_ACTION_STATE_CHANGE));
     }
@@ -75,20 +91,30 @@ public class ArticleListActivity extends ActionBarActivity implements
         unregisterReceiver(mRefreshingReceiver);
     }
 
-    private boolean mIsRefreshing = false;
-
     private BroadcastReceiver mRefreshingReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
             if (UpdaterService.BROADCAST_ACTION_STATE_CHANGE.equals(intent.getAction())) {
                 mIsRefreshing = intent.getBooleanExtra(UpdaterService.EXTRA_REFRESHING, false);
+                mIsConnected = intent.getBooleanExtra(UpdaterService.EXTRA_ISCONNECTED, false);
+                mIsError= intent.getBooleanExtra(UpdaterService.EXTRA_ERROR, false);;
+
                 updateRefreshingUI();
             }
         }
     };
 
     private void updateRefreshingUI() {
+
+        String msg = "Refreshing Data";
+
         mSwipeRefreshLayout.setRefreshing(mIsRefreshing);
+
+        if (!mIsConnected) msg = "Not Connected";
+        if (mIsError) msg = "Error Loading Data";
+
+        Snackbar.make(mCoordinatorLayout, msg, Snackbar.LENGTH_LONG).show();
+
     }
 
     @Override
