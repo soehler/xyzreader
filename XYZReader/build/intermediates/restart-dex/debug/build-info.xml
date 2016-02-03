@@ -1,31 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
+    abi="x86"
     api-level="22"
     density="420dpi"
-    format="1"
-    timestamp="1453502845137" >
+    format="3"
+    timestamp="1454538732114023000" >
 
     <task
         name="javac"
-        duration="184" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="133" />
+        duration="0" />
     <task
         name="verifier"
-        duration="27" />
+        duration="0" />
 
-    <artifact
-        location="/Users/soehler/AndroidNanoDegree/Material Design for Android Developpers/xyzreader/XYZReader/build/outputs/apk/XYZReader-debug.apk"
-        type="MAIN" />
-
-    <build timestamp="1453502845137" >
+    <build timestamp="1454538636536989000" >
         <artifact
             location="/Users/soehler/AndroidNanoDegree/Material Design for Android Developpers/xyzreader/XYZReader/build/outputs/apk/XYZReader-debug.apk"
             type="MAIN" />
     </build>
+    <build timestamp="1454538732114023000" />
 
 </instant-run>
