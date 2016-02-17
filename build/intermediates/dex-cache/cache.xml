@@ -5,14 +5,14 @@
         jar="/Users/soehler/AndroidNanoDegree/Material Design for Android Developpers/xyzreader/XYZReader/build/intermediates/transforms/instantRunSlicer/debug/jars/1/5/main_slice.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="148b911e0af5d2c4777b1a1972a68503139166e9">
+        sha1="9c2ed41a17a9ffdb08219c1db6465226248f36ec">
         <dex dex="/Users/soehler/AndroidNanoDegree/Material Design for Android Developpers/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/5/main_slice_83074a6204c2022a93a6872a7f70a027f95a8ae5/classes.dex" />
     </item>
     <item
         jar="/Users/soehler/AndroidNanoDegree/Material Design for Android Developpers/xyzreader/XYZReader/build/intermediates/transforms/instantRunSlicer/debug/jars/1/1a/dependencies.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="54b3bd0f08a9c4a14c49259691c54654b7c0a184">
+        sha1="7a216d9fd8cd867c3a801005e094e9306c43bf0c">
         <dex dex="/Users/soehler/AndroidNanoDegree/Material Design for Android Developpers/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/1a/dependencies_96e356daf1a45f9d240662a038af26f03102c51b/classes.dex" />
     </item>
 
