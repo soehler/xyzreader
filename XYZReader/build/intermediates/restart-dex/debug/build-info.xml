@@ -2,31 +2,41 @@
 <instant-run
     abi="x86"
     api-level="22"
-    density="xxhdpi"
-    format="5"
-    timestamp="1455739389340979000" >
+    density="420dpi"
+    format="6"
+    timestamp="1456777188085101000" >
 
     <task
         name="javac"
-        duration="368" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="285" />
+        duration="0" />
     <task
         name="verifier"
-        duration="51" />
+        duration="0" />
 
     <artifact
-        location="/Users/soehler/AndroidNanoDegree/Material Design for Android Developpers/xyzreader/XYZReader/build/outputs/apk/XYZReader-debug.apk"
-        type="MAIN" />
+        location="/Users/soehler/AndroidNanoDegree/Material Design for Android Developpers/xyzreader/XYZReader/build/intermediates/res/resources-debug.ap_"
+        type="RESOURCES" />
 
-    <build timestamp="1455739389340979000" >
+    <build timestamp="1456776176357850000" >
         <artifact
             location="/Users/soehler/AndroidNanoDegree/Material Design for Android Developpers/xyzreader/XYZReader/build/outputs/apk/XYZReader-debug.apk"
             type="MAIN" />
+    </build>
+    <build timestamp="1456776453104043000" >
+        <artifact
+            location="/Users/soehler/AndroidNanoDegree/Material Design for Android Developpers/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7_85ee6a075b13050d22fc3ac1e92818eb2e7035d8/classes.dex"
+            type="DEX" />
+    </build>
+    <build timestamp="1456777188085101000" >
+        <artifact
+            location="/Users/soehler/AndroidNanoDegree/Material Design for Android Developpers/xyzreader/XYZReader/build/intermediates/res/resources-debug.ap_"
+            type="RESOURCES" />
     </build>
 
 </instant-run>
